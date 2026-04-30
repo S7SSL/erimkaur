@@ -50,7 +50,7 @@ a { color: var(--burgundy); }
 
 /* === Heading font: italic script handwriting === */
 .script {
-    font-family: 'Dancing Script', 'Pinyon Script', cursive;
+    font-family: 'Italianno', 'Pinyon Script', cursive;
     font-style: italic;
     font-weight: 600;
 }
@@ -76,9 +76,9 @@ h1, h2, h3, h4, .hero h1, .section-header h2, .article h1 {
     height: 72px;
 }
 .logo {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Italianno', cursive;
     font-style: italic; font-weight: 700;
-    font-size: 2rem; color: var(--burgundy);
+    font-size: 2.6rem; color: var(--burgundy);
     text-decoration: none; letter-spacing: 0;
     line-height: 1;
 }
@@ -154,10 +154,11 @@ h1, h2, h3, h4, .hero h1, .section-header h2, .article h1 {
     line-height: 1.05; margin-bottom: 22px;
 }
 .hero h1 .accent {
-    font-family: 'Dancing Script', cursive;
-    font-style: italic; font-weight: 700;
+    font-family: 'Italianno', cursive;
+    font-style: italic; font-weight: 400;
     color: var(--burgundy);
-    font-size: 1.15em;
+    font-size: 1.6em;
+    line-height: 0.95;
 }
 .hero p.lead {
     font-size: 1.15rem; line-height: 1.7;
@@ -233,7 +234,7 @@ h1, h2, h3, h4, .hero h1, .section-header h2, .article h1 {
     color: var(--burgundy-deep);
 }
 .pitch-inner .pitch-eyebrow {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Italianno', cursive;
     font-style: italic; font-size: 1.1rem;
     color: var(--burgundy); margin-bottom: 4px;
 }
@@ -249,7 +250,7 @@ section { padding: 80px 24px; }
 .section-header { text-align: center; margin-bottom: 48px; }
 .section-header .eyebrow {
     display: inline-block;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Italianno', cursive;
     font-style: italic; font-weight: 600;
     font-size: 1.4rem; color: var(--burgundy);
     margin-bottom: 6px;
@@ -331,7 +332,7 @@ section { padding: 80px 24px; }
 }
 .logo-strip-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
 .logo-strip h3 {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Italianno', cursive;
     font-style: italic; font-weight: 600;
     font-size: 1.4rem; color: var(--burgundy);
     margin-bottom: 28px;
@@ -353,8 +354,11 @@ section { padding: 80px 24px; }
 /* ===== AWARDS ===== */
 .awards-row {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+@media (max-width: 1100px) {
+    .awards-row { grid-template-columns: repeat(3, 1fr); }
 }
 .award-card {
     background: var(--ivory); border: 1px solid var(--border);
@@ -372,14 +376,21 @@ section { padding: 80px 24px; }
 
 /* ===== TESTIMONIALS ===== */
 .testimonials-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 22px;
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+@media (max-width: 1100px) {
+    .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+    .testimonials-grid { grid-template-columns: 1fr; }
 }
 .testimonial-card {
     background: var(--ivory); border: 1px solid var(--border);
-    border-radius: 14px; padding: 30px;
+    border-radius: 14px; padding: 26px 22px;
     position: relative;
 }
+.testimonial-card p { font-size: 0.92rem; }
 .testimonial-card::before {
     content: '\201C'; font-family: 'Cormorant Garamond', serif;
     font-size: 4.5rem; color: var(--burgundy); line-height: 1;
@@ -410,7 +421,7 @@ section { padding: 80px 24px; }
 /* ===== FAQ ===== */
 .faq-list { display: flex; flex-direction: column; gap: 10px; }
 .faq-group-title {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Italianno', cursive;
     font-style: italic; font-weight: 600;
     font-size: 1.4rem; color: var(--burgundy);
     margin: 28px 0 6px;
@@ -458,7 +469,7 @@ section { padding: 80px 24px; }
     transform: rotate(-3deg);
 }
 .ebook-cover .cover-eyebrow {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Italianno', cursive;
     font-style: italic; font-size: 1rem;
     color: var(--gold); margin-bottom: 14px;
 }
@@ -490,7 +501,7 @@ section { padding: 80px 24px; }
 }
 .press-item:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(110, 30, 44, 0.08); border-color: var(--burgundy); }
 .press-item .outlet {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Italianno', cursive;
     font-style: italic; font-weight: 600;
     font-size: 1.15rem; color: var(--burgundy); margin-bottom: 6px;
 }
@@ -516,13 +527,13 @@ section { padding: 80px 24px; }
     background: linear-gradient(135deg, var(--burgundy-deep) 0%, var(--burgundy) 100%);
     color: var(--cream-warm);
     display: flex; align-items: center; justify-content: center;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Italianno', cursive;
     font-style: italic; font-weight: 600;
     font-size: 1.3rem;
 }
 .blog-card .card-body { padding: 22px; flex: 1; display: flex; flex-direction: column; }
 .blog-card .card-tag {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Italianno', cursive;
     font-style: italic; font-weight: 600;
     font-size: 1rem; color: var(--burgundy); margin-bottom: 8px;
 }
@@ -612,7 +623,7 @@ section { padding: 80px 24px; }
     padding: 130px 24px 80px;
 }
 .article .article-eyebrow {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Italianno', cursive;
     font-style: italic; font-weight: 600;
     font-size: 1.3rem; color: var(--burgundy);
     margin-bottom: 14px; display: block;
@@ -671,7 +682,7 @@ section { padding: 80px 24px; }
 }
 .event-hero-inner { max-width: 760px; margin: 0 auto; position: relative; z-index: 1; }
 .event-eyebrow {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Italianno', cursive;
     font-style: italic; font-weight: 600;
     font-size: 1.3rem; color: var(--gold);
     margin-bottom: 10px;
@@ -682,7 +693,7 @@ section { padding: 80px 24px; }
     line-height: 1.1; margin-bottom: 18px;
 }
 .event-hero .host {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Italianno', cursive;
     font-style: italic; font-weight: 600;
     font-size: 1.5rem; color: var(--gold);
     margin-bottom: 28px;
@@ -702,7 +713,7 @@ section { padding: 80px 24px; }
     border-radius: 14px; padding: 18px 26px; min-width: 160px;
 }
 .event-detail .label {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Italianno', cursive;
     font-style: italic; font-size: 1rem;
     color: var(--gold); margin-bottom: 4px;
 }
@@ -715,7 +726,7 @@ section { padding: 80px 24px; }
     margin-bottom: 20px; text-align: center;
 }
 .event-content .phase-eyebrow {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Italianno', cursive;
     font-style: italic; font-weight: 600;
     font-size: 1.4rem; color: var(--burgundy);
     text-align: center; margin-bottom: 6px;
@@ -790,4 +801,71 @@ section { padding: 80px 24px; }
     .article h1 { font-size: 1.9rem; }
     .event-hero h1 { font-size: 2.2rem; }
     .awards-row { grid-template-columns: 1fr; }
+}
+
+/* ===== HERO ENQUIRY (form 1) ===== */
+.hero-enquiry {
+    display: flex; gap: 8px; flex-wrap: wrap;
+    margin-bottom: 8px; max-width: 540px;
+}
+.hero-enquiry input[type="email"] {
+    flex: 1; min-width: 220px;
+    padding: 13px 18px;
+    border: 1.5px solid var(--border);
+    border-radius: 100px;
+    font-family: inherit; font-size: 0.95rem;
+    background: var(--ivory);
+}
+.hero-enquiry input[type="email"]:focus {
+    outline: none; border-color: var(--burgundy);
+    box-shadow: 0 0 0 3px rgba(110, 30, 44, 0.12);
+}
+.hero-meta {
+    font-size: 0.8rem; color: var(--text-light);
+    margin-bottom: 24px;
+}
+
+/* ===== MID-PAGE ENQUIRY CARD (form 2) ===== */
+.midform-section {
+    padding: 60px 24px; background: var(--ivory);
+}
+.midform-card {
+    background: linear-gradient(135deg, var(--cream) 0%, var(--cream-warm) 100%);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 40px;
+    text-align: center;
+    max-width: 640px; margin: 0 auto;
+    box-shadow: 0 12px 36px rgba(110, 30, 44, 0.06);
+}
+.midform-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.9rem; font-weight: 600;
+    color: var(--burgundy-deep);
+    margin-bottom: 8px;
+}
+.midform-card p {
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+    font-size: 1rem;
+}
+.midform {
+    display: flex; gap: 8px; flex-wrap: wrap;
+    justify-content: center;
+}
+.midform input[type="email"] {
+    flex: 1; min-width: 220px;
+    padding: 13px 18px;
+    border: 1.5px solid var(--border);
+    border-radius: 100px;
+    font-family: inherit; font-size: 0.95rem;
+    background: var(--ivory);
+}
+.midform input[type="email"]:focus {
+    outline: none; border-color: var(--burgundy);
+}
+
+/* Blog thumb images: keep aspect-ratio when using background-image */
+.blog-card .card-thumb[style*="background-image"] {
+    color: transparent;
 }

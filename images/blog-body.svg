@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FAF4EA"/>
+      <stop offset="100%" stop-color="#E8DAC0"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1.5" fill="#6E1E2C" fill-opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#dots)"/>
+  <!-- decorative ribbon top-right -->
+  <circle cx="1450" cy="-50" r="280" fill="#6E1E2C" fill-opacity="0.06"/>
+  <circle cx="1450" cy="-50" r="180" fill="#6E1E2C" fill-opacity="0.05"/>
+  
+  <!-- icon -->
+  <g transform="translate(800, 360)" stroke="#6E1E2C" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="scale(2) translate(-40, -45)"><circle cx="40" cy="20" r="12"/><path d="M20 80 Q20 50, 40 50 Q60 50, 60 80"/><line x1="20" y1="55" x2="6" y2="68"/><line x1="60" y1="55" x2="74" y2="68"/></g>
+  </g>
+  <!-- italic label -->
+  <text x="800" y="650" text-anchor="middle" font-family="Georgia, 'Cormorant Garamond', serif" font-style="italic" font-size="68" fill="#2D0B12" font-weight="500">Body Language</text>
+  <!-- small under-text -->
+  <text x="800" y="730" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="32" fill="#6E1E2C" font-weight="400" letter-spacing="3">erim kaur</text>
+</svg>
